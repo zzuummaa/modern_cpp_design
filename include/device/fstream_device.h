@@ -7,9 +7,9 @@
 #include <fstream>
 
 template<
-        typename HandleAccessor,
-        typename ErrorHandler,
-        typename MessageConverter
+    typename HandleAccessor,
+    typename ErrorHandler,
+    typename MessageConverter
 >
 class Device : public IDevice<typename MessageConverter::FirstType> {
     typedef typename HandleAccessor::HandleType HandleType;
